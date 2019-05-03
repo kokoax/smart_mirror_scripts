@@ -1,0 +1,119 @@
+@font-face {
+  font-family: "San Francisco Display Ultralight";
+  font-style: normal;
+  font-weight: 100;
+  src:
+    url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.eot?#iefix) format("embedded-opentype"),
+    url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.woff2) format("woff2"),
+    url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.woff) format("woff"),
+    url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.ttf) format("truetype"),
+    url("fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.svg#San Francisco Display Ultralight") format("svg");
+}
+
+@font-face {
+  font-family: "Lane-Narrow";
+	src: url(/font/Lane/LANENAR_.ttf);
+}
+
+html {
+  background: #000;
+  color: #fff;
+  font-size: 2.5em;
+  /* font-family: "Lane-Narrow"; */
+  /* font-family: "San Francisco"; */
+  /* font-family: -apple-system, 'BlinkMacSystemFont', Sans-Serif; */
+
+  font-family: "San Francisco Display Ultralight";
+  font-weight: 100;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  margin-top: 40px;
+}
+
+.container-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.weather-container {
+  margin-right: 10px;
+}
+
+.todo-container {
+  font-size: 0.5em;
+  margin-left: 10px;
+}
+
+.inner-container {
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+}
+
+.weather-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  margin-bottom: 10px;
+}
+
+.todo-wrapper {
+  margin-bottom: 10px;
+}
+
+.weather-item {
+  align-self: center;
+}
+
+.todo-item {
+  float: left;
+  align-self: center;
+}
+
+.todo-text {
+  margin-left: 20px;
+  align-self: left;
+}
+
+.svg {
+  fill: white;
+}
+
+.svg-humidity {
+  margin-left: -10px;
+}
+
+.svg-wind {
+  margin-right: -5px;
+}
+
+.colon {
+  position: relative;
+  top: -.12em;
+}
+
+#wind-direction {
+  font-size: 0.5em;
+}
+
+#date {
+  font-size: 1.3em;
+}
+#time {
+  font-size: 4em;
+}
+
+div.todos {
+
+  float
+}
+
+div.weather {
+}
