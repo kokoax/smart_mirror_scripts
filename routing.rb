@@ -1,9 +1,13 @@
 require("sinatra")
 
+Process.daemon if ARGV.any? {|i| i == '-D' }
+
 set :public_folder, File.dirname(__FILE__) + '/public'
 
-get '/' do
-  File.read("./index.html")
+class App < Sinatra::Base
+  get '/' do
+    File.read("./index.html")
+  end
 end
 
 '''
