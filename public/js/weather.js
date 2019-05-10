@@ -1,6 +1,6 @@
 function getWeatherInfo(token) {
   // var BASE_URL = "http://dataservice.accuweather.com/currentconditions/v1/data"
-  var locationKey = "224170" // 盛岡のkey
+  var locationKey = "221204" // 盛岡のkey
   var BASE_URL = "http://dataservice.accuweather.com/forecasts/v1/daily/1day/" + locationKey
 
   var details = "true" // 詳細情報を含むかどうか

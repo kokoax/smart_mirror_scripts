@@ -18,6 +18,7 @@ function getTodos(key, token) {
 function todo() {
   (async function show() {
     var todoDiv = document.getElementById("todos");
+    todoDiv.innerHTML = ' ';
 
     var trelloKey= (await fetch("/assets/trello_key")
       .then((resp) => resp.text()))

@@ -1,0 +1,13 @@
+[Unit]
+Description=Some Scripts For Smart Mirror
+
+[Service]
+ExecStart=/usr/local/bin/rackup /home/pi/repos/smart_mirror_scripts/config.ru --port 4567
+Restart=always
+Type=simple
+TimeoutSec=infinity
+# PIDFile=/run/smart_mirror_scripts.pid
+
+[Install]
+WantedBy=multi-user.target
+Alias=smart_mirror_script.service

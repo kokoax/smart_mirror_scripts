@@ -3,7 +3,7 @@ require("sinatra")
 set :public_folder, File.dirname(__FILE__) + '/public'
 
 get '/' do
-  File.read("./index.html")
+  File.read(File.dirname(__FILE__) + "/index.html")
 end
 
 '''
