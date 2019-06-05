@@ -1,10 +1,9 @@
 function getWeatherInfo(token) {
-  // var BASE_URL = "http://dataservice.accuweather.com/currentconditions/v1/data"
-  var locationKey = "221204" // 盛岡のkey
+  var locationKey = "221204"
   var BASE_URL = "http://dataservice.accuweather.com/forecasts/v1/daily/1day/" + locationKey
 
-  var details = "true" // 詳細情報を含むかどうか
-  var metric = "true" // Metric情報を含むかどうか
+  var details = "true"
+  var metric = "true"
 
   const params = new URLSearchParams();
   params.set("apikey", token);
@@ -19,7 +18,6 @@ function getWeatherInfo(token) {
 function weather() {
   (async function show() {
     var hour = new Date().getHours()
-    // var iconUrl = "https://vortex.accuweather.com/adc2010/images/slate/icons/";
     var iconUrl = "/img/accuweather-icon/svg/";
     var tempMax = document.getElementById("temp-max");
     var tempMin = document.getElementById("temp-min");

@@ -1,6 +1,4 @@
 function getTodos(key, token) {
-  // TrelloのSmartTODOテーブルのTODOSリストのID
-  // そこにTODOを追加したりすると表示も変わる
   var listId = "5c7ca122766e320f50d4ece6";
 
   var BASE_URL = "https://trello.com/1/list/" + listId + "/cards";

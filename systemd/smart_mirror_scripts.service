@@ -9,5 +9,5 @@ TimeoutSec=infinity
 # PIDFile=/run/smart_mirror_scripts.pid
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=default.target
 Alias=smart_mirror_script.service
